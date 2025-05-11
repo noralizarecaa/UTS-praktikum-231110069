@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kategori - Recha Fashion Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: #ffffff;
+        color: #333;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .logo-bar {
+        background: white;
+        padding: 20px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        font-weight: 500;
+        color: #555;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 50px 0 30px;
+      }
+
+      .categories {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 40px 5%;
+      }
+
+      .category-card {
+        text-align: center;
+        background: #fafafa;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+        width: 200px;
+        transition: transform 0.2s;
+      }
+
+      .category-card:hover {
+        transform: scale(1.03);
+      }
+
+      .category-card img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      .category-card p {
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 10px 0 5px;
+      }
+
+      footer {
+        background: #222;
+        color: white;
+        padding: 40px 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      footer div {
+        flex: 1;
+        min-width: 200px;
+        margin-bottom: 20px;
+      }
+
+      footer h4 {
+        margin-bottom: 15px;
+        font-size: 1rem;
+      }
+
+      footer p,
+      footer li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-bar">
+      <div class="logo-text">NOREFASHION</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="kategori.html">Kategori</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <h2 class="section-title">Kategori Produk</h2>
+    <div class="categories">
+      <div class="category-card">
+        <a href="product-jacket.html">
+          <img src="jacket.png" alt="Jaket" />
+          <p>Jaket</p>
+          <span>(2 Produk)</span>
+        </a>
+      </div>
+      <div class="category-card">
+        <a href="product-celana.html">
+          <img src="celana.png" alt="Celana" />
+          <p>Celana</p>
+          <span>(2 Produk)</span>
+        </a>
+      </div>
+      <div class="category-card">
+        <a href="product-baju.html">
+          <img src="bajuce.png" alt="Baju" />
+          <p>Baju</p>
+          <span>(8 Produk)</span>
+        </a>
+      </div>
+      <div class="category-card">
+        <a href="product-aksesoris.html">
+          <img src="aksesoris.png" alt="Aksesoris" />
+          <p>Aksesoris</p>
+          <span>(1 Produk)</span>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <h4>Tentang kami</h4>
+        <p>NOREFASHION merupakan brand terpercaya yang telah berdiri sejak 1999 dan telah memproduksi berbagai macam fashion lokal terbaik.</p>
+      </div>
+      <div>
+        <h4>Kategori</h4>
+        <ul>
+          <li>Jaket</li>
+          <li>Baju</li>
+          <li>Celana</li>
+          <li>Aksesoris</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hubungi Kami</h4>
+        <p>Sleman, Yogyakarta<br />Universitas Mercu Buana Yogyakarta</p>
+        <p>📞 0811 2227 788</p>
+      </div>
+    </footer>
+  </body>
+</html>

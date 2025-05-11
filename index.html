@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recha Fashion Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: #ffffff;
+        color: #333;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      header {
+        background: #000;
+        color: white;
+        padding: 10px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+      }
+
+      .logo-bar {
+        background: white;
+        padding: 20px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        font-weight: 500;
+        color: #555;
+      }
+
+      .hero-banner {
+        width: 100%;
+        background: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 5%;
+        flex-wrap: wrap;
+      }
+
+      .hero-banner img {
+        max-width: 300px;
+        border-radius: 10px;
+      }
+
+      .hero-text {
+        max-width: 600px;
+      }
+
+      .hero-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+
+      .hero-text p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+
+      .btn-primary {
+        background: #000;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        display: inline-block;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 50px 0 30px;
+      }
+
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        padding: 0 5% 60px;
+      }
+
+      .product-card {
+        background: #fafafa;
+        padding: 16px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      .product-card img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+
+      .promo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 5%;
+        background: #eee;
+        flex-wrap: wrap;
+      }
+
+      .promo img {
+        max-height: 150px;
+      }
+
+      .categories {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 40px 5%;
+      }
+
+      .category-card {
+        text-align: center;
+      }
+
+      .category-card img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      .profile-section {
+        background: #f8f8f8;
+        text-align: center;
+        padding: 60px 5%;
+      }
+
+      .profile-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #ddd;
+        margin-bottom: 20px;
+      }
+
+      .owner-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      footer {
+        background: #222;
+        color: white;
+        padding: 40px 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      footer div {
+        flex: 1;
+        min-width: 200px;
+        margin-bottom: 20px;
+      }
+
+      footer h4 {
+        margin-bottom: 15px;
+        font-size: 1rem;
+      }
+
+      footer p,
+      footer li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-bar">
+      <div class="logo-text">NOREFASHION</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="kategori.html">Kategori</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="hero-banner">
+      <div class="hero-text">
+        <h1>DISKON hingga 70%</h1>
+        <p>Warnai liburanmu dengan style baru</p>
+        <a href="contact.html" class="btn-primary">Belanja Sekarang</a>
+      </div>
+      <img src="model.png" alt="Promo Outfit" />
+    </section>
+
+    <h2 class="section-title">Terbaru</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="baju1.png" alt="Kemeja Cewek" />
+        <p>Kemeja Cewek</p>
+        <strong>Rp48.000,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="baju2.png" alt="Blouse Casual" />
+        <p>Blouse Casual</p>
+        <strong>Rp32.000,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="baju3.png" alt="Blouse Motif" />
+        <p>Blouse Motif</p>
+        <strong>Rp56.000,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="baju4.png" alt="Jaket Casual" />
+        <p>Casual Jacket</p>
+        <strong>Rp40.000,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="baju5.png" alt="Kaos Cewek" />
+        <p>Kaos Crop Top</p>
+        <strong>Rp31.000,00</strong>
+      </div>
+    </div>
+
+    <div class="promo">
+      <img src="banner_1_1n.jpg" alt="Free Shipping" />
+      <img src="banner_1_2n.jpg" alt="Shoes 40%" />
+    </div>
+
+    <div class="categories">
+      <div class="category-card">
+        <img src="jacket.png" alt="Jaket" />
+        <p>Jaket (2)</p>
+      </div>
+      <div class="category-card">
+        <img src="celana.png" alt="Celana" />
+        <p>Celana (2)</p>
+      </div>
+      <div class="category-card">
+        <img src="bajuce.png" alt="Baju" />
+        <p>Baju (8)</p>
+      </div>
+      <div class="category-card">
+        <img src="aksesoris.png" alt="Aksesoris" />
+        <p>Aksesoris (1)</p>
+      </div>
+    </div>
+
+    <section class="profile-section">
+      <img src="owner.jpg" alt="Noraliza Recha" class="profile-img" />
+      <h4 class="owner-name">Noraliza Recha</h4>
+      <p>Hai! Saya Noraliza Recha, pendiri <strong>Fashion Store</strong> — tempat di mana setiap produk dipilih dengan cinta, gaya, dan keaslian. Ekspresikan gayamu dengan percaya diri.</p>
+    </section>
+
+    <footer>
+      <div>
+        <h4>Tentang kami</h4>
+        <p>NOREFASHION merupakan brand terpercaya yang telah berdiri sejak 1999 dan telah memproduksi berbagai macam fashion lokal terbaik.</p>
+      </div>
+      <div>
+        <h4>Kategori</h4>
+        <ul>
+          <li>Jaket</li>
+          <li>Baju</li>
+          <li>Celana</li>
+          <li>Aksesoris</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hubungi Kami</h4>
+        <p>Sleman,Yogyakarta<br />Universitas Mercu Buana Yogyakarta</p>
+        <p>📞 0811 2227 788</p>
+      </div>
+    </footer>
+  </body>
+</html>

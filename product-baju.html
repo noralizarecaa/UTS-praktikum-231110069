@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baju - NOREFASHION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --primary: #000000;
+        --accent: #000000; /* tetap hitam */
+        --bg-light: #f9f9f9;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: white;
+        color: var(--primary);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.3s;
+      }
+
+      .logo-bar {
+        background: white;
+        padding: 20px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      .logo-text {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--accent);
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+
+      nav ul li a {
+        font-weight: 500;
+        padding: 8px 12px;
+        border-radius: 6px;
+      }
+
+      nav ul li a:hover {
+        background: var(--accent);
+        color: white;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 60px 0 40px;
+      }
+
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 24px;
+        padding: 0 5% 60px;
+      }
+
+      .product-card {
+        background: var(--bg-light);
+        padding: 16px;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 14px;
+        transition: transform 0.3s;
+      }
+
+      .product-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .product-card p {
+        font-size: 1rem;
+        margin-bottom: 6px;
+        font-weight: 500;
+      }
+
+      .product-card strong {
+        color: var(--accent);
+        font-size: 1.1rem;
+      }
+
+      footer {
+        background: #111827;
+        color: white;
+        padding: 60px 5% 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+
+      footer div {
+        flex: 1;
+        min-width: 220px;
+      }
+
+      footer h4 {
+        margin-bottom: 18px;
+        font-size: 1.1rem;
+        color: var(--accent);
+      }
+
+      footer p,
+      footer li {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #d1d5db;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      @media (max-width: 600px) {
+        .logo-bar {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+
+        nav ul {
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-bar">
+      <div class="logo-text">NOREFASHION</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="kategori.html">Kategori</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <h2 class="section-title">Kategori: Baju</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="baju1.png" alt="Kemeja Cewek" />
+        <p>Kemeja Cewek</p>
+        <strong>Rp48.000,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="baju2.png" alt="Blouse Casual" />
+        <p>Blouse Casual</p>
+        <strong>Rp32.000,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="baju3.png" alt="Blouse Motif" />
+        <p>Blouse Motif</p>
+        <strong>Rp56.000,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="baju5.png" alt="Kaos Crop Top" />
+        <p>Kaos Crop Top</p>
+        <strong>Rp31.000,00</strong>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <h4>Tentang kami</h4>
+        <p>NOREFASHION merupakan brand terpercaya yang telah berdiri sejak 1999 dan telah memproduksi berbagai macam fashion lokal terbaik.</p>
+      </div>
+      <div>
+        <h4>Kategori</h4>
+        <ul>
+          <li>Jaket</li>
+          <li>Baju</li>
+          <li>Celana</li>
+          <li>Aksesoris</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hubungi Kami</h4>
+        <p>Sleman, Yogyakarta<br />Universitas Mercu Buana Yogyakarta</p>
+        <p>📞 0811 2227 788</p>
+      </div>
+    </footer>
+  </body>
+</html>

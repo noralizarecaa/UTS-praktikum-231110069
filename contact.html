@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - NOREFASHION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: #ffffff;
+        color: #333;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .logo-bar {
+        background: white;
+        padding: 20px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li {
+        margin: 0;
+      }
+
+      nav ul li a {
+        font-weight: 500;
+        color: #555;
+      }
+
+      .contact-section {
+        padding: 60px 5%;
+        max-width: 700px;
+        margin: auto;
+      }
+
+      .contact-section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .contact-section p {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      input, textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+      }
+
+      button {
+        padding: 12px;
+        background: #000;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      footer {
+        background: #222;
+        color: white;
+        padding: 40px 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      footer div {
+        flex: 1;
+        min-width: 200px;
+        margin-bottom: 20px;
+      }
+
+      footer h4 {
+        margin-bottom: 15px;
+        font-size: 1rem;
+      }
+
+      footer p,
+      footer li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-bar">
+      <div class="logo-text">NOREFASHION</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="kategori.html">Kategori</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="contact-section">
+      <h2>Hubungi Kami</h2>
+      <p>Jika ada pertanyaan atau kerja sama, silakan hubungi kami melalui formulir berikut.</p>
+      <form>
+        <input type="text" placeholder="Nama" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="5" placeholder="Pesan" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+
+    <footer>
+      <div>
+        <h4>Tentang kami</h4>
+        <p>NOREFASHION merupakan brand terpercaya yang telah berdiri sejak 1999 dan telah memproduksi berbagai macam fashion lokal terbaik.</p>
+      </div>
+      <div>
+        <h4>Kategori</h4>
+        <ul>
+          <li>Jaket</li>
+          <li>Baju</li>
+          <li>Celana</li>
+          <li>Aksesoris</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p>Sleman, Yogyakarta<br />Universitas Mercu Buana Yogyakarta</p>
+        <p>📞 0811 2227 788</p>
+      </div>
+    </footer>
+  </body>
+</html>
